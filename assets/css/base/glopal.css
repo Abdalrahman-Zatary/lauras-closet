@@ -1,12 +1,12 @@
 /* Start Font */
 @font-face {
   font-family: "Myfont";
-  src: url(../Fonts/Euclid\ Circular\ A\ Bold.ttf);
+  src: url(../../Fonts/Euclid\ Circular\ A\ Bold.ttf);
   font-weight:600;
 }
 @font-face {
   font-family: "Myfont";
-  src: url(../Fonts/Euclid\ Circular\ A\ Light.ttf);
+  src: url(../../Fonts/Euclid\ Circular\ A\ Light.ttf);
   font-weight: 400;
 }
 body {
