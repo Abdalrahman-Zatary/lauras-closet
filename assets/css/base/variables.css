@@ -1,0 +1,77 @@
+:root {
+  --navyblue-100: #9CA3AF;
+  --navyblue-200: #6B7280;
+  --navyblue-300: #374151;
+  --navyblue-400: #1F2937;
+  --navyblue-500: #1C2333;
+  --white-100: #FFFFFF;
+  --white-200: #FAFAFA;
+  --white-300: #F3F4F6;
+  --light-red: #EB5757;
+  --light-orange: #F7C59F;
+}
+/* Start Colors */
+/* text */
+.co-navyblue-100 {
+  color: #9CA3AF;
+}
+.co-navyblue-200 {
+  color: #6B7280;
+}
+.co-navyblue-300 {
+  color: #374151;
+}
+.co-navyblue-400 {
+  color: #1F2937;
+}
+.co-navyblue-500 {
+  color: #1C2333;
+}
+.co-white-100 {
+  color: #FFFFFF;
+}
+.co-white-200 {
+  color: #FAFAFA;
+}
+.co-white-300 {
+  color: #F3F4F6;
+}
+.co-light-orange {
+  color: #F7C59F;
+}
+.co-light-red {
+  color: #EB5757;
+}
+
+/* background */
+.bc-navyblue-100 {
+  background-color: #9CA3AF;
+}
+.bc-navyblue-200 {
+  background-color: #6B7280;
+}
+.bc-navyblue-300 {
+  background-color: #374151;
+}
+.bc-navyblue-400 {
+  background-color: #1F2937;
+}
+.bc-navyblue-500 {
+  background-color: #1C2333;
+}
+.bc-white-100 {
+  background-color: #FFFFFF;
+}
+.bc-white-200 {
+  background-color: #FAFAFA;
+}
+.bc-white-300 {
+  background-color: #F3F4F6;
+}
+.bc-light-orange {
+  background-color: #F7C59F;
+}
+.bc-light-red {
+  background-color: #EB5757;
+}
+/* End Colors */

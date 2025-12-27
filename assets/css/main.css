@@ -1,0 +1,81 @@
+
+/* Start Gallary */
+.gallary .gallary-row  {
+  height: 32rem;
+}
+.gallary .gallary-row .box:first-of-type {
+  flex-basis: 40%;
+}
+.gallary .gallary-row .box:last-of-type {
+  flex-basis: 60%;
+}
+.gallary .gallary-row .box img  {
+  transition: 0.5s;
+}
+.gallary .gallary-row .box:hover img {
+  transform: scale(1.2) rotate(3deg);
+}
+.gallary .gallary-row .box .content-box {
+  bottom: 1.25rem;
+  left: 1.25rem;
+  border: 1px solid rgba(200 200 200 / 50%);
+  color: var(--white-300);
+  background: rgba(0 0 0 / 15%);
+  backdrop-filter: blur(1rem);
+}
+@media (max-width: 992px) {
+  .gallary .gallary-row .box {
+    flex-basis: 100%;
+  }
+  .gallary .gallary-row  {
+  height: auto;
+  }
+}
+/* End Gallary */
+/* Start Services */
+.services .row .card {
+  transition: 0.5s;
+}
+.services .row .card:hover {
+  box-shadow: 0 0 10px 0 rgba(0 0 0 / 30%);
+  transform: translateY(-3px);
+}
+.services .card img {
+  object-position: top;
+}
+@media (min-width: 576px) {
+  .services .card img {
+    height: 343px;
+  }
+}
+.services .card .card-body p {
+  max-width: 250px;
+  line-height: 1.3rem;
+}
+/* End Services */
+/* Start Brands */
+.brands img {
+  width: 80px;
+}
+/* End Brands */
+/* Start Offers */
+.offers .land {
+  background-image: url(../images/Offer/offer.png);
+  background-size: cover;
+  width: 100%;
+  height: 515px;
+}
+.offers .land .content-land {
+  top: 12rem;
+  left: 3rem;
+}
+.offers .land .content-land h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  color: #104368;
+}
+.offers .land .countdown {
+  bottom: 3rem;
+  left: 3rem;
+}
+/* End Offers */

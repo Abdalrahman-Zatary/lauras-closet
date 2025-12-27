@@ -1,0 +1,40 @@
+/* Start footer */
+.about .commun .form .form-content form input {
+  height: 2.75rem;
+  outline: none;
+  border: 1.5px solid var(--navyblue-100);
+}
+.about .commun .form .form-content form input:focus {
+  box-shadow:  0 0 0 3px var(--navyblue-100);
+}
+.about .commun .form .form-content form input::placeholder {
+  color: var(--navyblue-200);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.about .pay .order .other-links li a {
+  border-bottom: 1.5px solid var(--navyblue-200);
+  transition: 0.5s;
+}
+.about .pay .order .other-links li:hover a {
+  color: var(--navyblue-300);
+}
+.about .pay .order .other-links li:not(:last-child) a::after {
+  content: "";
+  width: 2px;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: #E5E7EB;
+  position: absolute;
+  top: 2px;
+  right: -7px;
+}
+.about .pay .accept .images img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.about .pay .accept .images img:hover {
+  transform: translateY(-7px);
+  box-shadow: 6px 6px 6px 0 rgba(0 0 0 / 80%) ;
+}
+/* End footer */

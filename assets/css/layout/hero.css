@@ -1,0 +1,45 @@
+/* Start Header */
+@media (min-width: 992px) {
+  .lading {
+    height: 40.5rem;
+  }
+}
+.lading {
+  height: 40.5rem;
+}
+.landing .hero-first {
+  background-image: url(../images/Header/Mask.png);
+  object-fit: cover;
+  object-position: center;
+  height: 40.5rem;
+}
+.landing .hero-first .content {
+  left: 5rem;
+}
+@media (max-width: 992px) {
+  .landing .hero-first .content {
+    width: 100%;
+    left: 0;
+  }
+}
+.landing .hero-first .content button svg:hover {
+  color: var(--navyblue-500);
+}
+.landing .hero-scand {
+  height: 40.5rem;
+}
+.landing .hero-scand::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: var(--white-200);
+}
+.landing .hero-scand img {
+  height: 45rem;
+}
+/* End Header */

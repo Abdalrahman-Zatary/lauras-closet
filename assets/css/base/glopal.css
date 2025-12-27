@@ -1,0 +1,70 @@
+/* Start Font */
+@font-face {
+  font-family: "Myfont";
+  src: url(../Fonts/Euclid\ Circular\ A\ Bold.ttf);
+  font-weight:600;
+}
+@font-face {
+  font-family: "Myfont";
+  src: url(../Fonts/Euclid\ Circular\ A\ Light.ttf);
+  font-weight: 400;
+}
+body {
+  font-family: "Myfont" !important;
+}
+.f-bold {
+  font-weight: 600;
+}
+.f-light {
+  font-weight: 400;
+}
+.letter-1 {
+  letter-spacing: 1px;
+}
+.letter-2 {
+  letter-spacing: 2px;
+}
+.fs-7 {
+  font-size: 0.9rem;
+}
+.fs-8 {
+  font-size: 0.7rem;
+}
+.fs-9 {
+  font-size: 0.5rem;
+}
+/* End Font */
+/* Start Glopal Rules */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none; 
+}
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.spinner-border {
+  width: 4rem;
+  height: 4rem;
+}
+.pt-7 {
+  padding-top: 7.5rem;
+}
+.pb-7 {
+  padding-bottom: 7.5rem;
+}
+.hidden-addres h2::before {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.5rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  background-color: var(--navyblue-300);
+}
+/* End Glopal Rules */

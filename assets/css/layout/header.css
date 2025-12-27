@@ -1,0 +1,36 @@
+/* Start Nvbar */
+nav {
+  min-height: 9.4rem;
+}
+nav section:first-of-type {
+  min-height: 5.4rem;
+}
+nav section:last-of-type {
+  min-height: 4rem;
+}
+nav input[type="search"] {
+  caret-color: var(--navyblue-100);
+  color: var(--navyblue-200);
+}
+nav input[type="search"]:focus,
+nav button[type="submit"]:focus {
+    box-shadow: 0 0 0.1rem 0.3rem var(--navyblue-100);
+    color: var(--navyblue-300);
+}
+nav input[type="search"]::placeholder {
+  font-weight: 400;
+  color: var(--navyblue-100);
+}
+nav .links li a {
+  transition: 0.3s;
+}
+nav .links li a:hover {
+  color: var(--navyblue-400);
+}
+section .nav li a {
+  transition: 0.3s;
+}
+section .nav li a:hover {
+  color: var(--navyblue-500);
+}
+/* End Nvbar */
