@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura’s Closet</title>
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/css/base/glopal.css">
+    <link rel="stylesheet" href="./assets/css/base/variables.css">
+
+    <!-- libs -->
+    <link rel="stylesheet" href="./assets/css/libs/all.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css">
+
+    <!-- layout -->
+    <link rel="stylesheet" href="./assets/css/layout/header.css">
+    <link rel="stylesheet" href="./assets/css/layout/hero.css">
+    <link rel="stylesheet" href="./assets/css/layout/footer.css">
+
+    <!-- Main CSS Fill -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <!-- components -->
+    <link rel="stylesheet" href="./assets/css/components/animation.css">
+  </head>
+  <body>
+    <div class="loader position-fixed top-0 start-0 w-100 h-100 bc-white-100 d-flex justify-content-center align-items-center" style="z-index: 99999; transition: opacity 0.6s ease, visibility 0.6s ease;">
+      <div class="spinner-border text-secondary" role="status"></div>
+    </div>
+    <!-- Scroll websit -->
+    <div class="progress-wrap position-fixed bottom-0 end-0 d-flex justify-content-center align-items-center" aria-hidden="false">
+      <svg class="w-100 h-100" viewBox="0 0 80 80" role="img" aria-hidden="true">
+        <circle class="track" cx="40" cy="40" r="30"></circle>
+        <circle class="ring"  cx="40" cy="40" r="30"></circle>
+      </svg>
+    </div>
+    <!-- Start Navbar -->
+    <nav class="nav flex-column">
+      <section class="bc-white-200">
+        <div class="navbar container flex-column flex-md-row justify-content-md-between justify-content-center gap-4 ps-2 pe-2 pt-lg-4 pb-lg-4">
+          <h2 class="navbar-brand fs-lg-5 fs-4 f-bold co-navyblue-300 m-0 p-0">Laura’s Closet</h2>
+          <div class="col-lg-3 position-relative">
+            <input class="form-control border-0 border-bottom bg-transparent co-navyblue-200 p-0 ps-4" type="search" placeholder="Search for an Item..." aria-label="Search">
+            <button class="btn p-0 focus-ring border-0 bg-transparent co-navyblue-100 position-absolute top-50 start-0 translate-middle-y" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <ul class="links flex-md-fill flex-lg-grow-0 nav justify-content-center align-items-center gap-4">
+            <li class="nav-item">
+              <a class="text-decoration-none co-navyblue-200 f-light" aria-current="page" href="#">Stare</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none co-navyblue-200 f-light" href="#">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none co-navyblue-200 f-light" href="#">Wish List</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none co-navyblue-400 disabled f-bold" href="#" tabindex="-1" aria-disabled="true">Basket <i class="fas fa-shopping-bag fs-5"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="d-flex justify-content-center align-items-center bc-white-100">
+        <ul class="nav justify-content-lg-between justify-content-center container mb-0 ps-2 pe-0 ">
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >New Arrivals <span class="bc-light-red co-white-100 f-light fs-8 p-1">#Fresh</span></a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Dresses</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Tops</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Jackets</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Lingerie & Lounge Wear</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Beach Wear</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Blouse</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Denim</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Vintage</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Shoes</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Sandals</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Bags</a>
+          </li>
+          <li class="pe-lg-0 pe-4 pt-3 pb-3">
+            <a href="" class="text-decoration-none co-navyblue-300 f-bold fs-7" >Jewelries</a>
+          </li>
+        </ul>
+      </section>
+    </nav> 
+    <!-- End Navbar -->
+    <!-- Start Header -->
+    <header class="landing animation-fade-out d-flex flex-column flex-lg-row justify-content-lg-between">
+      <section class="hero-first position-relative col-lg-7 bc-navyblue-500 order-2 order-lg-0">
+        <div class="content bc-navyblue-400 position-absolute top-50 translate-middle-y text-lg-start text-center p-5">
+          <h1 class="display-4 fw-bold co-white-200 mb-4">Get up to 30% off</h1>
+          <span class="d-block fw-bold display-4 co-light-orange mb-4">New Arrivals</span>
+          <p class="fs-6 f-bold co-white-300 mb-5 letter-1">Introducing our latest collection of products</p>
+          <button class="btn p-3 btn-outline-light fs-7 f-bold letter-1 text-uppercase">Place your Order <img class="ms-1" src="./assets/images/icons/Vector 8.svg" alt=""></button>
+        </div>
+      </section>
+      <section class="hero-scand position-relative col-lg-5 bc-light-orange order-1 order-lg-0 overflow-visible">
+        <img class="position-relative start-50 translate-middle-x mw-100 object-fit-cover z-2" src="./assets/images/Header/Persoun.png" alt="">
+      </section>
+    </header>
+    <!-- End Header -->
+    <!-- Start Gallary -->
+    <section class="gallary pt-7 pb-7">
+      <div class="hidden-addres text-center animation-auto-show ">
+        <h2 class="fs-4 f-bold mb-5 text-uppercase co-navyblue-300 position-relative">This Weeks Highlights</h2>
+      </div>
+      <div class="container">
+        <div  class="gallary-row w-100 d-flex flex-column flex-lg-row gap-3 mb-3">
+          <figure class="box animation-fade-in animation-pos-start position-relative h-100 overflow-hidden">
+            <img class="position-relative w-100 object-fit-cover" src="./assets/images/Highlights/Shoes.png" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h2 class="display-4 f-bold text-center co-white-200">Exclusive Shoes</h2>
+            </div>
+            <figcaption class="content-box position-absolute p-2">
+              <h3 class="fs-6 f-bold letter-1 mb-3">Exclusive Shoes</h3>
+              <span class="d-block fs-8 f-light letter-2 mb-3">PRICE 20% OFF</span>
+              <p class="fs-7 f-light">DISCOUNT CODE - VATR3920 </p>
+            </figcaption>
+          </figure>          
+          <figure class="box animation-fade-in animation-pos-start position-relative h-100 overflow-hidden">
+            <img class="position-relative w-100 object-fit-cover"  src="./assets/images/Highlights/Styles.png" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h2 class="display-4 f-bold text-center co-white-200">Exquisite Styles & Collections</h2>
+            </div>
+            <figcaption class="content-box position-absolute p-2">
+              <h3 class="fs-6 f-bold letter-1 mb-3">Exquisite Styles & Collections</h3>
+              <span class="d-block fs-8 f-light letter-2 mb-3">PRICE 20% OFF</span>
+              <p class="fs-7 f-light">DISCOUNT CODE - VATR3920 </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div  class="gallary-row w-100 d-flex flex-column flex-lg-row-reverse gap-3 mb-3">
+          <figure class="box animation-fade-in animation-pos-end position-relative h-100 overflow-hidden">
+            <img class="position-relative w-100 h-100 object-fit-cover"  src="./assets/images/Highlights/Items.png" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h2 class="display-4 f-bold text-center co-white-200">Exclusive Items</h2>
+            </div>
+            <figcaption class="content-box position-absolute p-2">
+              <h3 class="fs-6 f-bold letter-1 mb-3">Exclusive Items</h3>
+              <span class="d-block fs-8 f-light letter-2 mb-3">PRICE 20% OFF</span>
+              <p class="fs-7 f-light">DISCOUNT CODE - VATR3920 </p>
+            </figcaption>
+          </figure>
+          <figure class="box animation-fade-in animation-pos-end position-relative h-100 overflow-hidden">
+            <img class="position-relative w-100 h-100 object-fit-cover"  src="./assets/images/Highlights/arrivals.png" alt="">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h2 class="display-4 f-bold text-center co-white-200">New Arrivals</h2>
+            </div>
+            <figcaption class="content-box position-absolute p-2">
+              <h3 class="fs-6 f-bold letter-1 mb-3">New Arrivals</h3>
+              <span class="d-block fs-8 f-light letter-2 mb-3">PRICE 20% OFF</span>
+              <p class="fs-7 f-light">DISCOUNT CODE - VATR3920 </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallary -->
+    <!-- Start Services -->
+    <section class="services position-relative pb-7">
+      <div class="hidden-addres text-center animation-auto-show">
+        <h2 class="fs-4 f-bold mb-5 text-uppercase co-navyblue-300 position-relative">Popular this week</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <article class="card border-0 rounded-0 col-sm-6 col-md-4 col-lg-3 animation-auto-show animation-de-1">
+            <img class="w-100 object-fit-cover" src="./assets/images/Popular/Popular-1.png" alt="">
+            <figcaption class="card-body p-0">
+              <p class="fs-7 f-bold co-navyblue-300 me-0 ms-0 mt-2 mb-2">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+              <div class="info d-flex justify-content-between align-items-center">
+                <strong class="fs-6 pe-1 f-bold co-navyblue-300">$120.23</strong>
+                <del class="fs-6 pe-1 fw-lighter co-navyblue-100">$135.74</del>
+                <button class="btn p-0 bg-transparent border-0 fs-8 f-bold co-navyblue-300">+ Add to Basket</button>
+              </div>
+            </figcaption>
+          </article>
+          <article class="card border-0 rounded-0 col-sm-6 col-md-4 col-lg-3 animation-auto-show animation-de-2">
+            <img class="w-100 object-fit-cover" src="./assets/images/Popular/Popular-2.png" alt="">
+            <figcaption class="card-body p-0">
+              <p class="fs-7 f-bold co-navyblue-300 me-0 ms-0 mt-2 mb-2">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+              <div class="info d-flex justify-content-between align-items-center">
+                <strong class="fs-6 pe-1 f-bold co-navyblue-300">$90.00</strong>
+                <del class="fs-6 pe-1 fw-lighter co-navyblue-100">$100.00</del>
+                <button class="btn p-0 bg-transparent border-0 fs-8 f-bold co-navyblue-300">+ Add to Basket</button>
+              </div>
+            </figcaption>
+          </article>
+          <article class="card border-0 rounded-0 col-sm-6 col-md-4 col-lg-3 animation-auto-show animation-de-3">
+            <img class="w-100 object-fit-cover" src="./assets/images/Popular/Popular-3.png" alt="">
+            <figcaption class="card-body p-0">
+              <p class="fs-7 f-bold co-navyblue-300 me-0 ms-0 mt-2 mb-2">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+              <div class="info d-flex justify-content-between align-items-center">
+                <strong class="fs-6 pe-1 f-bold co-navyblue-300">$140.24</strong>
+                <del class="fs-6 pe-1 fw-lighter co-navyblue-100">$150.34</del>
+                <button class="btn p-0 bg-transparent border-0 fs-8 f-bold co-navyblue-300">+ Add to Basket</button>
+              </div>
+            </figcaption>
+          </article>
+          <article class="card border-0 rounded-0 col-sm-6 col-md-4 col-lg-3 animation-auto-show animation-de-4">
+            <img class="w-100 object-fit-cover" src="./assets/images/Popular/Popular-4.png" alt="">
+            <figcaption class="card-body p-0">
+              <p class="fs-7 f-bold co-navyblue-300 me-0 ms-0 mt-2 mb-2">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+              <div class="info d-flex justify-content-between align-items-center">
+                <strong class="fs-6 pe-1 f-bold co-navyblue-300">$105.23</strong>
+                <del class="fs-6 pe-1 fw-lighter co-navyblue-100">$120.23</del>
+                <button class="btn p-0 bg-transparent border-0 fs-8 f-bold co-navyblue-300">+ Add to Basket</button>
+              </div>
+            </figcaption>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start Brands -->
+    <section class="brands text-center position-relative pb-7">
+      <div class="hidden-addres text-center animation-auto-show">
+        <h2 class="fs-4 f-bold mb-5 text-uppercase co-navyblue-300 position-relative">Brands for you</h2>
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center gap-5 animation-fade-in animation-pos-start animation-de-1">
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/Chanel.svg" alt="">
+          </div>
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/D&G.svg" alt="">
+          </div>
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/Dior.svg" alt="">
+          </div>
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/Versace.svg" alt="">
+          </div>
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/Zara.svg" alt="">
+          </div>
+          <div class="col-sm-4 col-md-2 col-lg-1 p-0 col">
+            <img src="./assets/images/Branda/Goccl.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Brands -->
+    <!-- Start Offers -->
+    <section class="offers pb-7">
+      <div class="container-lg container-fluid ps-0 pe-0">
+        <div class="land position-relative animation-fade-in animation-pos-end">
+          <div class="content-land position-absolute">
+            <h2 class="f-bold d-block text-uppercase mb-4">SUMMER <span class="text-uppercase fw-bold co-light-red ">COLLECTIONS</span></h2>
+            <button class="btn pt-2 pb-2 ps-3 pe-3 border-0 rounded-0 btn-outline-danger bc-white-200 fs-8 f-bold letter-1 text-uppercase">SHOP NOW<img class="ms-2" src="./images/icons/Vector 9.svg" alt=""></button>
+          </div>
+          <div class="countdown position-absolute d-flex justify-content-center align-items-center gap-3 co-white-200">
+            <div class="time-box text-center">
+              <span id="days" class="number d-block fs-4 f-bold letter-1">00</span>
+              <span class="label d-block f-light fs-8 mt-1">Days</span>
+            </div>
+            <span class="colon fs-5 f-light text-primary opacity-75">:</span>
+            <div class="time-box text-center">
+              <span id="hours" class="number d-block fs-4 f-bold letter-1">00</span>
+              <span class="label d-block f-light fs-8 mt-1">Hours</span>
+            </div>
+            <span class="colon fs-5 f-light text-primary opacity-75">:</span>
+            <div class="time-box text-center">
+              <span id="minutes" class="number d-block fs-4 f-bold letter-1">00</span>
+              <span class="label d-block f-light fs-8 mt-1">Minutes</span>
+            </div>
+            <span class="colon fs-5 f-light text-primary opacity-75">:</span>
+            <div class="time-box text-center">
+              <span id="seconds" class="number d-block fs-4 f-bold letter-1">00</span>
+              <span class="label d-block f-light fs-8 mt-1">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Offers -->
+    <!-- Start Footer -->
+    <footer class="about pt-5 pb-5 bc-white-200">
+      <div class="container ps-3 pe-3">
+        <section class="commun d-flex row justify-content-between mb-5">
+          <div class="links col-lg-5 col-12 d-flex flex-wrap justify-content-between text-center text-lg-start gap-lg-4 mb-5 p-0">
+            <div class="about-links">
+              <h4 class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-3 animation-auto-show">Company Info</h4>
+              <ul class="nav flex-column animation-auto-show animation-pos-start animation-de-1">
+                <li class="mb-1"><a href="" class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1">About Laura’s Closet </a></li>
+                <li class="mb-1"><a href="" class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1">Social Responsibility</a></li>
+                <li class="mb-1"><a href="" class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1">Affiliate</a></li>
+                <li class="mb-1"><a href="" class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1">Fashion Blogger</a></li>
+              </ul>
+            </div>
+            <div class="about-links">
+              <h4 class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-3 animation-auto-show">Help & Support</h4>
+              <ul class="nav flex-column animation-auto-show animation-pos-start animation-de-2">
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Shipping Info</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Returns</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">How to Order</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">How to Track</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Size Chart</a></li>
+              </ul>
+            </div>
+            <div class="about-links">
+              <h4 class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-3 animation-auto-show">customer care</h4>
+              <ul class="nav flex-column animation-auto-show animation-pos-start animation-de-3">
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Contact Us</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Payment</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Bonus Point</a></li>
+                <li class="mb-1"><a class="nav-link p-0 m-0 fs-8 co-navyblue-200 f-bold letter-1" href="">Notices</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form col-lg-5 col-12 d-flex flex-column">
+            <div class="icouns d-flex justify-content-between align-items-center mb-5">
+              <div class="socials">
+                <h4 class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-2 animation-auto-show">Socials</h4>
+                <div class="soshal d-flex gap-2 animation-auto-show animation-pos-end animation-de-2"> 
+                  <img src="./assets/images/Socials/feacebook.svg" alt="">
+                  <img src="./assets/images/Socials/touitar.svg" alt="">
+                  <img src="./assets/images/Socials/Instagram.svg" alt="">
+                  <img src="./assets/images/Socials/TikTok.svg" alt="">
+                  <img src="./assets/images/Socials/Snpshat.svg" alt="">
+                </div>
+              </div>
+              <div class="plat">
+                <h4 class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-2 animation-auto-show">Platforms</h4>
+                <div class="platforms d-flex gap-2 animation-auto-show animation-pos-end animation-de-2">
+                  <img src="./assets/images/Socials/android.svg" alt="">
+                  <img src="./assets/images/Socials/apple.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="form-content animation-auto-show animation-pos-end">
+              <p class="fs-7 f-bold text-uppercase co-navyblue-400 letter-1 mb-1">SIGN UP FOR Laura’s Closet  STYLE NEWS</p>
+              <form class="d-flex justify-content-between gap-3 mb-3" action="">
+                <input class="form-control rounded-0 co-navyblue-300 p-2" type="email" name="email" placeholder="Your email">
+                <button class="btn btn-light rounded-0 border-dark bc-navyblue-500 shadow-none fs-7 f-bold co-white-200 text-uppercase letter-1 w-25">subcribe</button>
+              </form>
+              <p class="fs-8 f-bold co-navyblue-300">By clicking the SUBSCRIBE button, you are agreeing to our <a class="text-primary text-decoration-none border-bottom border-primary" href="http://Google.com">Privacy & Cookie Policy</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="pay d-flex row justify-content-between align-items-end gap-5">
+          <div class="order col-lg-5 col-12 p-0 text-center text-lg-start">
+            <p class="fs-7 co-navyblue-200 letter-1 f-bold mb-3 animation-fade-in animation-pos-start">©2010-2022 Laura’s Closet All Rights Reserved</p>
+            <ul class="other-links nav justify-content-center justify-content-lg-start align-items-center gap-3 animation-fade-in animation-pos-start animation-de-1">
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Privacy Center</a></li>
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Privacy & Cookie Policy</a></li>
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Manage Cookies</a></li>
+            </ul>
+            <ul class="other-links nav justify-content-center justify-content-lg-start align-items-center gap-3 animation-fade-in animation-pos-start animation-de-1">
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Terms & Conditions</a></li>
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Copyright Notice</a></li>
+              <li class="pt-2 pb-2 ps-0 pe-0"><a class="fs-8 text-decoration-none letter-1 f-bold position-relative co-navyblue-200" href="">Imprint</a></li>
+            </ul>
+          </div>
+          <div class="accept text-start col-lg-5 col-12">
+            <h4 class="fs-7 f-bold text-uppercase letter-1 co-navyblue-400 mb-4 text-center text-lg-start animation-auto-show animation-pos-start">We accept</h4>
+            <div class="images d-flex justify-content-center justify-content-lg-start gap-2 flex-wrap animation-fade-in animation-pos-start animation-de-1">
+              <img src="./assets/images/Buy/AliPay.svg" alt="">
+              <img src="./assets/images/Buy/Amazon.svg" alt="">
+              <img src="./assets/images/Buy/American Express.svg" alt="">
+              <img src="./assets/images/Buy/ApplePay.svg" alt="">
+              <img src="./assets/images/Buy/Bitcoin.svg" alt="">
+              <img src="./assets/images/Buy/BitPay.svg" alt="">
+              <img src="./assets/images/Buy/Discover.svg" alt="">
+              <img src="./assets/images/Buy/eBay.svg" alt="">
+              <img src="./assets/images/Buy/Google Pay.svg" alt="">
+              <img src="./assets/images/Buy/MasterCard.svg" alt="">
+              <img src="./assets/images/Buy/monobank.svg" alt="">
+              <img src="./assets/images/Buy/Payoneer.svg" alt="">
+              <img src="./assets/images/Buy/Western Union.svg" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- libs -->
+    <script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/libs/all.min.js"></script>
+
+    <!-- File Mine JS -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- Spport animation Scroll -->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+  </body>
+</html>
