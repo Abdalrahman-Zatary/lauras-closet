@@ -1,0 +1,97 @@
+.progress-wrap {
+  width: 3.75rem;
+  height: 3.75rem;
+  z-index: 1000;
+}
+.progress-wrap svg {
+  transform: rotate(-90deg);
+}
+.track {
+  fill: #1F2937;
+  stroke: #1F2937;
+  stroke-width: 0.5rem;
+}
+.ring {
+  fill: none;
+  stroke: #F7C59F;
+  stroke-width: 0.5rem;
+  stroke-linecap: round;
+  stroke-dasharray: 188.5;         
+  stroke-dashoffset: 188.5;        
+  transition: stroke 200ms linear;
+}
+.ring {
+  animation: fill-ring 1s linear both;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+}
+@supports (animation-timeline: scroll()) {
+    .ring {
+      animation: fill-ring 1s linear both;
+      animation-timeline: scroll();
+      animation-range: 0% 100%;
+    }
+  }  
+.animation-fade-in {
+  scale: 0.7;
+  opacity: 0.7;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+.animation-pos-start {
+  transform-origin: left;
+}
+.animation-pos-end {
+transform-origin: right;
+}
+.animation-fade-out {
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit 150px;
+}
+.animation-auto-show {
+  animation: auto-show both;
+  animation-timeline: view(70% 5%);
+}
+.animation-de-1 {
+  animation-timeline: view(70% 10%);
+}
+.animation-de-2 {
+  animation-timeline: view(70% 25%);
+}
+.animation-de-3 {
+  animation-timeline: view(70% 40%);
+}
+.animation-de-4 {
+  animation-timeline: view(70% 55%);
+}
+@keyframes fill-ring {
+  from {
+    stroke-dashoffset: 188.5; 
+  }
+  to { 
+    stroke-dashoffset: 0; 
+  }
+}
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes auto-show {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
