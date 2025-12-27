@@ -4,6 +4,9 @@ A single-page landing website for *Laura's Closet*, a simple clothing store show
 ## Screenshot
 ![Laura's Closet Screenshot](./assets/images/screenshot.jpg)
 
+## Demo
+https://lauras-closet-model.netlify.app/
+
 ## Features
 - Display clothing collections and brands
 - Promotions/Offers section
