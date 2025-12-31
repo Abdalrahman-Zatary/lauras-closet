@@ -1,12 +1,3 @@
-// spinner
-const loadingTime = 3000;
-
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-  setTimeout(() => {
-    loader.classList.add("hidden");
-  }, loadingTime);
-});
 
 // Timer
 
